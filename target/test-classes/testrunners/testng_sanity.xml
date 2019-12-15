@@ -6,6 +6,7 @@
 
 		<listeners>
 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+		<listener class-name="RetryAnalyzerLogic.MyTransformer" />
 	<!-- 	<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
  -->	</listeners>
 
@@ -15,6 +16,7 @@
 	<test name="Hub Spot regression Test">
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
+			<!-- <class name="com.qa.hubspot.tests.HomePageTest" /> -->
 		</classes>
 	</test>
 </suite>
