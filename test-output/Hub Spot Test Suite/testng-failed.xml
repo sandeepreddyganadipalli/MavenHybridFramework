@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Test Suite]">
+  <test thread-count="5" name="Hub Spot regression Test(failed)">
+    <classes>
+      <class name="com.qa.hubspot.tests.ProfileAndPreferenceTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="superAdminTextTest"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.ProfileAndPreferenceTest -->
+    </classes>
+  </test> <!-- Hub Spot regression Test(failed) -->
+</suite> <!-- Failed suite [Hub Spot Test Suite] -->
