@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Hub_Spot_Test_Suite">
-              <span class="suite-name border-passed">Hub Spot Test Suite</span>
+              <span class="suite-name border-failed">Hub Spot Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Hub_Spot_Test_Suite" class="hide-methods failed suite-Hub_Spot_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Hub_Spot_Test_Suite -->
+                      <a href="#" panel-name="suite-Hub_Spot_Test_Suite" class="show-methods failed suite-Hub_Spot_Test_Suite"> (show)</a> <!-- show-methods failed suite-Hub_Spot_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Hub_Spot_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Hub_Spot_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Hub_Spot_Test_Suite" class="hide-methods skipped suite-Hub_Spot_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Hub_Spot_Test_Suite -->
+                      <a href="#" panel-name="suite-Hub_Spot_Test_Suite" class="show-methods skipped suite-Hub_Spot_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Hub_Spot_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Hub_Spot_Test_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Hub_Spot_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +138,6 @@
                       <a href="#" panel-name="suite-Hub_Spot_Test_Suite" class="show-methods passed suite-Hub_Spot_Test_Suite"> (show)</a> <!-- show-methods passed suite-Hub_Spot_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Hub_Spot_Test_Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
@@ -127,9 +160,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Hub_Spot_Test_Suite" class="panel Hub_Spot_Test_Suite">
-          <div class="suite-Hub_Spot_Test_Suite-class-passed">
+          <div class="suite-Hub_Spot_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.hubspot.tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -138,13 +171,112 @@
                   <a name="loginPageTitleTest">
                   </a> <!-- loginPageTitleTest -->
                   <span class="method-name">loginPageTitleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginnnn&quot;. Current title: &quot;HubSpot Login&quot; (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;INPF00HE0Z&apos;, ip: &apos;192.168.43.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ad61c4b114fb39f94fb438d129237c80
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementActions.waitPageTitle(ElementActions.java:78)
+	at com.qa.hubspot.pages.LoginPage.getLoginPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:43)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying login page title test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hub_Spot_Test_Suite-class-failed -->
+          <div class="suite-Hub_Spot_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.hubspot.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginnnn&quot;. Current title: &quot;HubSpot Login&quot; (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;INPF00HE0Z&apos;, ip: &apos;192.168.43.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2686ffce920da7991ed03771b17abd85
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementActions.waitPageTitle(ElementActions.java:78)
+	at com.qa.hubspot.pages.LoginPage.getLoginPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:43)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying login page title test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginnnn&quot;. Current title: &quot;HubSpot Login&quot; (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;INPF00HE0Z&apos;, ip: &apos;192.168.43.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f23e422218eed1e63c57a8ab8898d850
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementActions.waitPageTitle(ElementActions.java:78)
+	at com.qa.hubspot.pages.LoginPage.getLoginPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:43)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying login page title test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginnnn&quot;. Current title: &quot;HubSpot Login&quot; (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;INPF00HE0Z&apos;, ip: &apos;192.168.43.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 245ddeafa0d7ae939b1c98b08e00de5f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementActions.waitPageTitle(ElementActions.java:78)
+	at com.qa.hubspot.pages.LoginPage.getLoginPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:43)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying login page title test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hub_Spot_Test_Suite-class-skipped -->
+          <div class="suite-Hub_Spot_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
+                  <em>
+(user able to login into application test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -152,6 +284,8 @@
                   <a name="signUpLinkTest">
                   </a> <!-- signUpLinkTest -->
                   <span class="method-name">signUpLinkTest</span>
+                  <em>
+(verifying sign up link link test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,6 +302,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Hub Spot Test Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.hubspot.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;RetryAnalyzerLogic.MyTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Hub Spot regression Test&quot;&gt;
     &lt;classes&gt;
@@ -211,24 +346,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signUpLinkTest')
+data.setCell(0, 1, 'loginPageTitleTest')
 data.setCell(0, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(0, 3, 15851);
+data.setCell(0, 3, 25615);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
+data.setCell(1, 1, 'loginPageTitleTest')
 data.setCell(1, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(1, 3, 13537);
+data.setCell(1, 3, 25347);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginPageTitleTest')
 data.setCell(2, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(2, 3, 8320);
+data.setCell(2, 3, 25121);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginPageTitleTest')
+data.setCell(3, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(3, 3, 25068);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'signUpLinkTest')
+data.setCell(4, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(4, 3, 9636);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginTest')
+data.setCell(5, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(5, 3, 9485);
 window.suiteTableData['Hub_Spot_Test_Suite']= { tableData: data, tableDiv: 'times-div-Hub_Spot_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Hub_Spot_Test_Suite">
               </div> <!-- times-div-Hub_Spot_Test_Suite -->
             </div> <!-- times-div -->
@@ -261,35 +408,73 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">9434 ms</span>
+                <span class="method-start">7275 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17775 ms</span>
+                <span class="method-start">32917 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19077 ms</span>
+                <span class="method-start">34347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">38620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63755 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">73047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98123 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">99274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">107134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">132486 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">133700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpLinkTest</span>
-                <span class="method-start">23376 ms</span>
+                <span class="method-start">137957 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39230 ms</span>
+                <span class="method-start">147607 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40444 ms</span>
+                <span class="method-start">148730 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">44481 ms</span>
+                <span class="method-start">153004 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58021 ms</span>
+                <span class="method-start">162498 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

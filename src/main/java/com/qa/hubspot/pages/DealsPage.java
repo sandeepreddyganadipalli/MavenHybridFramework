@@ -19,7 +19,7 @@ public class DealsPage extends BasePage{
 		System.out.println("create deal...");
 	}
 	
-	public void getDealPageTitle() {
+	public String getDealPageTitle() {
 		return driver.getTitle();
 	}
 
