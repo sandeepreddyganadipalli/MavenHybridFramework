@@ -13,5 +13,14 @@ public class DealsPage extends BasePage{
 	public DealsPage(WebDriver driver) {
 		this.driver=driver;	
 	}
+	
+	
+	public void createDeal() {
+		System.out.println("create deal...");
+	}
+	
+	public void getDealPageTitle() {
+		return driver.getTitle();
+	}
 
 }
