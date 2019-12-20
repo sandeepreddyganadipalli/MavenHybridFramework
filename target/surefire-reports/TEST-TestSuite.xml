@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="128.572" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="166.148" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\apache-maven-3.6.1\bin;C:\Users\sganadipalli\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\apache-maven-3.6.1\bin;C:\Users\sganadipalli\OneDrive - DXC Production\Softwares\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Git\cmd;C:\Users\sganadipalli\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="C:\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,7 +64,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="34.826"/>
-  <testcase name="signUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="28.529"/>
-  <testcase name="loginTest" classname="com.qa.hubspot.tests.LoginPageTest" time="36.653"/>
+  <testcase name="loginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="10.468"/>
+  <testcase name="homePageTitleTest" classname="com.qa.hubspot.tests.HomePageTest" time="6.396"/>
+  <testcase name="profileAndPreferencesTitleTest" classname="com.qa.hubspot.tests.ProfileAndPreferenceTest" time="25.301">
+    <failure message="Expected condition failed: waiting for title to contain &quot;User Preferences | HubSpot&quot;. Current title: &quot;Reports dashboard&quot; (tried for 25 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INPF00HE0Z&apos;, ip: &apos;192.168.43.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 2cc6b5fa00969bdf2117e3cf531a300b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for title to contain "User Preferences | HubSpot". Current title: "Reports dashboard" (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INPF00HE0Z', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2cc6b5fa00969bdf2117e3cf531a300b
+	at com.qa.hubspot.tests.ProfileAndPreferenceTest.profileAndPreferencesTitleTest(ProfileAndPreferenceTest.java:37)
+</failure>
+    <system-out><![CDATA[Some Exception occured while clicking elementBy.className: user-info-preferences
+profileAndPreferencesTitleTest started!
+profileAndPreferencesTitleTest failed!
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 24360
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 20, 2019 8:29:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="contactsPageTitleTest" classname="com.qa.hubspot.tests.ContactsPageTest" time="0.015"/>
+  <testcase name="signUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="9.849"/>
+  <testcase name="homePageHeaderTextTest" classname="com.qa.hubspot.tests.HomePageTest" time="9.622"/>
 </testsuite>

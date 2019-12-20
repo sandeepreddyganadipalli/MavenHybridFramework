@@ -12,18 +12,21 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
   <aspectj.version>1.8.10</aspectj.version>
+  
   </properties>
 
 <build>
 		<plugins>
 
-			<plugin>
+		<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>5.0.13</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 
@@ -34,7 +37,7 @@
 				<configuration>
 
 					<suiteXmlFiles>
-						<suiteXmlFile>src\test\resources\testrunners\testng_sanity.xml</suiteXmlFile>
+						<suiteXmlFile>src\test\resources\testrunners\testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -137,11 +140,11 @@
 			<version>3.1.5</version>
 		</dependency>
 		
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 			<version>2.12.1</version>
 		</dependency>
-		
+		 -->
 	 </dependencies>
 </project>

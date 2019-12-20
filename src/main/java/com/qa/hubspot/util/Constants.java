@@ -12,6 +12,8 @@ public class Constants {
 	public static final String PHONE_NUMBER_TEXT="Phone number";
 	public static final String CONTATCS_PAGE_TITLE="Contacts";
 	public static final String CONTATCS_PAGE_HEADER="Contacts";
+	public static final String DEALS_PAGE_TITLE="Deals";
+	public static final String DEALS_PAGE_HEADER="Deals";
 	
 	
 	

@@ -15,12 +15,18 @@ public class HomePage extends BasePage {
 	By header = By.cssSelector("span.private-dropdown__button-label>h1");
 	By accountname = By.className("account-name");
 	
-	By dropsdown= By.cssSelector("a#account-menu>svg");
+	By dropsdown= By.className("account-name");
 	By profileandpref= By.className("user-info-preferences");
 	
 	
 	By contactMainTab= By.id("nav-primary-contacts-branch");
 	By contactChildTab=By.id("nav-secondary-contacts");
+	
+	
+	By salesDropDown=By.linkText("Sales");
+	By deals=By.linkText("Deals");
+	
+	
 	
 	
 	public HomePage(WebDriver driver) {
@@ -75,5 +81,15 @@ public class HomePage extends BasePage {
 		elementactions.doClick(profileandpref);
 		
 		return new ProfileAndPreferencesPage(driver);
+	}
+	
+	
+	public DealsPage doClickDealsPage() {
+		
+		
+		elementactions.doClickActions(salesDropDown);
+		elementactions.doClick(deals);
+		
+	return new DealsPage(driver);
 	}
 }

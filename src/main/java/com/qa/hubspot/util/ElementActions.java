@@ -30,7 +30,7 @@ public class ElementActions {
 	}
 
 	public void waitForElementPresen(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 25);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 	wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
