@@ -7,8 +7,6 @@ import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.util.Constants;
 import com.qa.hubspot.util.ElementActions;
 
-import io.qameta.allure.Step;
-
 public class LoginPage extends BasePage {
 
 	WebDriver driver;
@@ -28,12 +26,12 @@ public class LoginPage extends BasePage {
 	}
 
 	// 3.Page Actions/Methods
-	@Step("getting login page title step...")
+	//@Step("getting login page title step...")
 	public String getLoginPageTitle() {
 		return elementactions.waitPageTitle(Constants.LOGIN_PAGE_TITLE);
 	}
 
-	@Step("login with username : {0} and password :{1} step...")
+//	@Step("login with username : {0} and password :{1} step...")
 	public HomePage doLogin(String username, String pwd) {
 		
 		elementactions.doSendKeys(emailId, username);
@@ -43,7 +41,7 @@ public class LoginPage extends BasePage {
 		return new HomePage(driver);
 		
 	}
-	@Step("verifying sign up link is displayed step...")
+//	@Step("verifying sign up link is displayed step...")
 	public boolean signUpLinkIsDisplaye() {
 		return  elementactions.isElementDisplayed(signUpLink);
 		

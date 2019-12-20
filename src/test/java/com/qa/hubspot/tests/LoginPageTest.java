@@ -13,10 +13,7 @@ import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.pages.LoginPage;
 import com.qa.hubspot.util.Constants;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+
 
 public class LoginPageTest {
 
@@ -36,9 +33,9 @@ public class LoginPageTest {
 	
 
 	@Test(priority = 1, description ="verifying login page title test")
-	@Severity(SeverityLevel.NORMAL)
-	@Description("Test Case Description : Verify login page title test onLogin Page")
-	@Story("Story Name : To check login page title")
+//	@Severity(SeverityLevel.NORMAL)
+//	@Description("Test Case Description : Verify login page title test onLogin Page")
+//	@Story("Story Name : To check login page title")
 	public void loginPageTitleTest() {
 		String pagaTItle = loginpage.getLoginPageTitle();
 		System.out.println("page title is :: " + pagaTItle);
@@ -46,17 +43,17 @@ public class LoginPageTest {
 	}
 
 	@Test(priority = 2,description = "verifying sign up link link test")
-	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Case Description : Verify the sing up link test")
-	@Story("Stroy Name: To check sign up link is displayed link test")
+//	@Severity(SeverityLevel.CRITICAL)
+//	@Description("Test Case Description : Verify the sing up link test")
+//	@Story("Stroy Name: To check sign up link is displayed link test")
 	public void signUpLinkTest() {
 		Assert.assertTrue(loginpage.signUpLinkIsDisplaye());
 	}
 
 	@Test(priority = 3,description = "user able to login into application test")
-	@Severity(SeverityLevel.BLOCKER)
-	@Description("Test Case Description :user able to login into application test")
-	@Story("Story Name : user able to login into application test")
+//	@Severity(SeverityLevel.BLOCKER)
+//	@Description("Test Case Description :user able to login into application test")
+//	@Story("Story Name : user able to login into application test")
 	public void loginTest() {
 		loginpage.doLogin(properties.getProperty("username"), properties.getProperty("password"));
 	}
