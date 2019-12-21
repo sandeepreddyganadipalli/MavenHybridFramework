@@ -5,8 +5,15 @@
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
     <listener class-name="RetryAnalyzerLogic.MyTransformer"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Hub Spot regression Test(failed)">
+  <test thread-count="5" verbose="0" name="Hub Spot sanity Test(failed)">
     <classes>
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
+        <methods>
+          <include name="contactsPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
       <class name="com.qa.hubspot.tests.ProfileAndPreferenceTest">
         <methods>
           <include name="profileAndPreferencesTitleTest"/>
@@ -15,5 +22,5 @@
         </methods>
       </class> <!-- com.qa.hubspot.tests.ProfileAndPreferenceTest -->
     </classes>
-  </test> <!-- Hub Spot regression Test(failed) -->
+  </test> <!-- Hub Spot sanity Test(failed) -->
 </suite> <!-- Failed suite [Hub Spot Test Suite] -->
