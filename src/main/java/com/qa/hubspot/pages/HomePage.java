@@ -2,6 +2,9 @@ package com.qa.hubspot.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.util.Constants;
@@ -22,8 +25,11 @@ public class HomePage extends BasePage {
 	By contactMainTab= By.id("nav-primary-contacts-branch");
 	By contactChildTab=By.id("nav-secondary-contacts");
 	
+
+	By salesfropdown=By.id("nav-primary-sales-branch");
 	
-	By salesDropDown=By.linkText("Sales");
+
+	//By  salesDropDown=By.linkText("Sales");
 	By deals=By.linkText("Deals");
 	
 	
@@ -69,27 +75,34 @@ public class HomePage extends BasePage {
 	elementactions.doClick(contactMainTab);
 		elementactions.doClick(contactChildTab);
 	}
-//	public void doClickDropDown() {
-//		
-//	}
+	public ProfileAndPreferencesPage goToProfilePage() {
+		
+		doClickProfilepref();
+		return new ProfileAndPreferencesPage(driver);
+	}
 
-	public ProfileAndPreferencesPage doClickProfilepref() {
+	private  void doClickProfilepref() {
 		
 
 		elementactions.doClick(dropsdown);
 		
 		elementactions.doClick(profileandpref);
 		
-		return new ProfileAndPreferencesPage(driver);
+		
 	}
 	
+	public DealsPage goToDealPage() {
+		doClickDealsPage();
+		
+		
+		return new DealsPage(driver);
+	}
 	
-	public DealsPage doClickDealsPage() {
+	private void doClickDealsPage() {
 		
-		
-		elementactions.doClickActions(salesDropDown);
+		elementactions.doClick(salesfropdown);
 		elementactions.doClick(deals);
 		
-	return new DealsPage(driver);
+	
 	}
 }

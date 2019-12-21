@@ -11,7 +11,7 @@ public class DealsPage extends BasePage{
 	
 	
 	WebDriver driver;
-	ElementActions elementActions;
+	ElementActions elementactions;
 	
 	
 	//objects
@@ -25,24 +25,24 @@ public class DealsPage extends BasePage{
 	//constructor
 	public DealsPage(WebDriver driver) {
 		this.driver=driver;	
-		elementActions=new ElementActions(driver);
+		elementactions= new ElementActions(this.driver);
 	}
 	
 	
 	public String getDealPageTitle() {
-		String title=elementActions.waitPageTitle(Constants.DEALS_PAGE_TITLE);
+		String title=elementactions.waitPageTitle(Constants.DEALS_PAGE_TITLE);
 		return title;
 	}
 	public String getDealsPageHeader() {
-		String dealspageheader=elementActions.doGetText(dealspageHeader);
+		String dealspageheader=elementactions.doGetText(dealspageHeader);
 		return dealspageheader;
 	}
 	
 	public void createDeal(String dealname,String Amount) {
 	
-		elementActions.doClick(createdeal);
-		elementActions.doSendKeys(dealName, dealname);
-		elementActions.doSendKeys(amount, Amount);
+		elementactions.doClick(createdeal);
+		elementactions.doSendKeys(dealName, dealname);
+		elementactions.doSendKeys(amount, Amount);
 	
 	}
 	

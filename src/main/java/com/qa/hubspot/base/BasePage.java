@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BasePage {
 
-	WebDriver driver;
+	public static  WebDriver driver;
 	Properties properties;
 
 	/**

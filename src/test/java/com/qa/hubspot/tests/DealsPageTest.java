@@ -27,13 +27,16 @@ public class DealsPageTest {
 
 	@BeforeMethod
 	public void setup() {
+		basepage = new BasePage();
 		properties = basepage.init_properties();
 		driver = basepage.init_driver(properties);
+		loginpage = new LoginPage(driver);
 		homepage = loginpage.doLogin(properties.getProperty("username"), properties.getProperty("password"));
-		homepage.doClickDealsPage();
+		dealspage=homepage.goToDealPage();
 	}
+	
 
-	@Test
+	@Test(priority = 1)
 	public void titleTest() {
 		String title = dealspage.getDealPageTitle();
 		System.out.println("Deals page title is :: " + title);
@@ -41,7 +44,7 @@ public class DealsPageTest {
 
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void dealsPageHeaderTest() {
 		String header = dealspage.getDealsPageHeader();
 		System.out.println("Deals page heaser is :: " + header);
@@ -56,13 +59,13 @@ public class DealsPageTest {
 		return dealsdata;
 	}
 
-	@Test(dataProvider = "getDealsData")
+	@Test(priority = 3,dataProvider = "getDealsData")
 	public void createDealTest(String DN, String AMT) {
 		dealspage.createDeal(DN, AMT);
 	}
 
 	@AfterMethod
-	public void quit() {
+	public void teandown() {
 		driver.quit();
 	}
 

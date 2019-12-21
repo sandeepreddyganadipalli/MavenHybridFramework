@@ -13,10 +13,13 @@
 
 	
 
-	<test name="Hub Spot regression Test">
+	<test name="Hub Spot sanity Test">
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
-			<!-- <class name="com.qa.hubspot.tests.HomePageTest" /> -->
+			<class name="com.qa.hubspot.tests.HomePageTest" />
+			<class name="com.qa.hubspot.tests.ProfileAndPreferenceTest" />
+			<class name="com.qa.hubspot.tests.ContactsPageTest" />
+			<class name="com.qa.hubspot.tests.DealsPageTest" />
 		</classes>
 	</test>
 </suite>
