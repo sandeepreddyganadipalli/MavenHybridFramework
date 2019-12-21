@@ -29,7 +29,7 @@ public class ProfileAndPreferenceTest {
 		driver = basepage.init_driver(properties);
 		loginpage = new LoginPage(driver);
 		homepage = loginpage.doLogin(properties.getProperty("username"), properties.getProperty("password"));
-		profileandpreferences=homepage.doClickProfilepref();
+		profileandpreferences=homepage.goToProfilePage();
 	}
 
 	@Test(priority = 1)

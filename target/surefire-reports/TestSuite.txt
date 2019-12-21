@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 166.148 s <<< FAILURE! - in TestSuite
-profileAndPreferencesTitleTest(com.qa.hubspot.tests.ProfileAndPreferenceTest)  Time elapsed: 25.301 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for title to contain "User Preferences | HubSpot". Current title: "Reports dashboard" (tried for 25 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INPF00HE0Z', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cc6b5fa00969bdf2117e3cf531a300b
-	at com.qa.hubspot.tests.ProfileAndPreferenceTest.profileAndPreferencesTitleTest(ProfileAndPreferenceTest.java:37)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 267.098 s - in TestSuite

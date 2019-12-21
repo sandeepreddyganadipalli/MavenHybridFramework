@@ -1,99 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="1" failed="0" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot Test Suite" duration-ms="164509" started-at="2019-12-20T14:59:01Z" finished-at="2019-12-20T15:01:45Z">
+  <suite name="Hub Spot Test Suite" duration-ms="265032" started-at="2019-12-21T11:37:56Z" finished-at="2019-12-21T11:42:21Z">
     <groups>
     </groups>
-    <test name="Hub Spot regression Test" duration-ms="164509" started-at="2019-12-20T14:59:01Z" finished-at="2019-12-20T15:01:45Z">
+    <test name="Hub Spot regression Test" duration-ms="265032" started-at="2019-12-21T11:37:56Z" finished-at="2019-12-21T11:42:21Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="setUp" is-config="true" duration-ms="5353" started-at="2019-12-20T14:59:01Z" finished-at="2019-12-20T14:59:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="setUp" is-config="true" duration-ms="7557" started-at="2019-12-21T11:37:56Z" finished-at="2019-12-21T11:38:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="loginPageTitleTest" duration-ms="10469" started-at="2019-12-20T14:59:06Z" description="verifying login page title test" finished-at="2019-12-20T14:59:17Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="loginPageTitleTest" duration-ms="10321" started-at="2019-12-21T11:38:04Z" description="verifying login page title test" finished-at="2019-12-21T11:38:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="tearDown" is-config="true" duration-ms="1031" started-at="2019-12-20T14:59:17Z" finished-at="2019-12-20T14:59:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="tearDown" is-config="true" duration-ms="1146" started-at="2019-12-21T11:38:14Z" finished-at="2019-12-21T11:38:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="setUp" is-config="true" duration-ms="8487" started-at="2019-12-20T15:01:01Z" finished-at="2019-12-20T15:01:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="setUp" is-config="true" duration-ms="4191" started-at="2019-12-21T11:41:34Z" finished-at="2019-12-21T11:41:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="signUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="signUpLinkTest" duration-ms="9849" started-at="2019-12-20T15:01:09Z" description="verifying sign up link link test" finished-at="2019-12-20T15:01:19Z">
+        <test-method status="PASS" signature="signUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="signUpLinkTest" duration-ms="11063" started-at="2019-12-21T11:41:38Z" description="verifying sign up link link test" finished-at="2019-12-21T11:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@289d1c02]" name="tearDown" is-config="true" duration-ms="1034" started-at="2019-12-20T15:01:19Z" finished-at="2019-12-20T15:01:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1fc2b765]" name="tearDown" is-config="true" duration-ms="1347" started-at="2019-12-21T11:41:49Z" finished-at="2019-12-21T11:41:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+      <class name="com.qa.hubspot.tests.DealsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.DealsPageTest@22eeefeb]" name="setup" is-config="true" duration-ms="35759" started-at="2019-12-21T11:40:57Z" finished-at="2019-12-21T11:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="titleTest()[pri:1, instance:com.qa.hubspot.tests.DealsPageTest@22eeefeb]" name="titleTest" duration-ms="10" started-at="2019-12-21T11:41:33Z" finished-at="2019-12-21T11:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="teandown()[pri:0, instance:com.qa.hubspot.tests.DealsPageTest@22eeefeb]" name="teandown" is-config="true" duration-ms="1189" started-at="2019-12-21T11:41:33Z" finished-at="2019-12-21T11:41:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teandown -->
+      </class> <!-- com.qa.hubspot.tests.DealsPageTest -->
       <class name="com.qa.hubspot.tests.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@3891771e]" name="setUp" is-config="true" duration-ms="24877" started-at="2019-12-20T15:00:35Z" finished-at="2019-12-20T15:01:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@289d1c02]" name="setUp" is-config="true" duration-ms="30342" started-at="2019-12-21T11:40:24Z" finished-at="2019-12-21T11:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="contactsPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.ContactsPageTest@3891771e]" name="contactsPageTitleTest" duration-ms="13" started-at="2019-12-20T15:01:00Z" finished-at="2019-12-20T15:01:00Z">
+        <test-method status="PASS" signature="contactsPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.ContactsPageTest@289d1c02]" name="contactsPageTitleTest" duration-ms="2150" started-at="2019-12-21T11:40:54Z" finished-at="2019-12-21T11:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactsPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@3891771e]" name="tearDown" is-config="true" duration-ms="1079" started-at="2019-12-20T15:01:00Z" finished-at="2019-12-20T15:01:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@289d1c02]" name="tearDown" is-config="true" duration-ms="1165" started-at="2019-12-21T11:40:56Z" finished-at="2019-12-21T11:40:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
       <class name="com.qa.hubspot.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="setUp" is-config="true" duration-ms="14952" started-at="2019-12-20T14:59:18Z" finished-at="2019-12-20T14:59:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="setUp" is-config="true" duration-ms="16717" started-at="2019-12-21T11:38:15Z" finished-at="2019-12-21T11:38:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="homePageTitleTest" duration-ms="6401" started-at="2019-12-20T14:59:33Z" finished-at="2019-12-20T14:59:39Z">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="homePageTitleTest" duration-ms="6576" started-at="2019-12-21T11:38:32Z" finished-at="2019-12-21T11:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="1020" started-at="2019-12-20T14:59:39Z" finished-at="2019-12-20T14:59:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="tearDown" is-config="true" duration-ms="1111" started-at="2019-12-21T11:38:39Z" finished-at="2019-12-21T11:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="setUp" is-config="true" duration-ms="14611" started-at="2019-12-20T15:01:20Z" finished-at="2019-12-20T15:01:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="setUp" is-config="true" duration-ms="18819" started-at="2019-12-21T11:41:51Z" finished-at="2019-12-21T11:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageHeaderTextTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="homePageHeaderTextTest" duration-ms="9611" started-at="2019-12-20T15:01:35Z" finished-at="2019-12-20T15:01:44Z">
+        <test-method status="PASS" signature="homePageHeaderTextTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="homePageHeaderTextTest" duration-ms="10394" started-at="2019-12-21T11:42:10Z" finished-at="2019-12-21T11:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageHeaderTextTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="1072" started-at="2019-12-20T15:01:44Z" finished-at="2019-12-20T15:01:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@75881071]" name="tearDown" is-config="true" duration-ms="1231" started-at="2019-12-21T11:42:20Z" finished-at="2019-12-21T11:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.HomePageTest -->
       <class name="com.qa.hubspot.tests.ProfileAndPreferenceTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@17d0685f]" name="setUp" is-config="true" duration-ms="28236" started-at="2019-12-20T14:59:40Z" finished-at="2019-12-20T15:00:08Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="46486" started-at="2019-12-21T11:38:40Z" finished-at="2019-12-21T11:39:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="profileAndPreferencesTitleTest()[pri:1, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@17d0685f]" name="profileAndPreferencesTitleTest" duration-ms="25293" started-at="2019-12-20T15:00:08Z" finished-at="2019-12-20T15:00:34Z">
+        <test-method status="SKIP" signature="profileAndPreferencesTitleTest()[pri:1, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="profileAndPreferencesTitleTest" duration-ms="25352" started-at="2019-12-21T11:39:26Z" finished-at="2019-12-21T11:39:52Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for title to contain "User Preferences | HubSpot". Current title: "Reports dashboard" (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INPF00HE0Z', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cc6b5fa00969bdf2117e3cf531a300b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e691073629b48797a439c70b8df0c98c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "User Preferences | HubSpot". Current title: "Reports dashboard" (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INPF00HE0Z', ip: '192.168.43.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cc6b5fa00969bdf2117e3cf531a300b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\sganadipalli\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e691073629b48797a439c70b8df0c98c
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.qa.hubspot.util.ElementActions.waitPageTitle(ElementActions.java:78)
@@ -133,7 +147,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileAndPreferencesTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@17d0685f]" name="tearDown" is-config="true" duration-ms="1061" started-at="2019-12-20T15:00:34Z" finished-at="2019-12-20T15:00:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="tearDown" is-config="true" duration-ms="1229" started-at="2019-12-21T11:39:52Z" finished-at="2019-12-21T11:39:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="29381" started-at="2019-12-21T11:39:53Z" finished-at="2019-12-21T11:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="profileAndPreferencesTitleTest()[pri:1, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="profileAndPreferencesTitleTest" duration-ms="120" started-at="2019-12-21T11:40:22Z" finished-at="2019-12-21T11:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileAndPreferencesTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ProfileAndPreferenceTest@2a70a3d8]" name="tearDown" is-config="true" duration-ms="1297" started-at="2019-12-21T11:40:22Z" finished-at="2019-12-21T11:40:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

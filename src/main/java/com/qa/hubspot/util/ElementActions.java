@@ -89,6 +89,13 @@ public class ElementActions {
 
 	}
 	
+	public void DomoveToElement(WebElement element) {
+		
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
+		
+	}
+	
 	
 	
 }
